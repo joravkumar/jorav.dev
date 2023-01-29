@@ -2,7 +2,7 @@ import * as React from "react"
 import { UpDown, UpDownWide, waveAnimation } from "../Elements/Animation"
 import Content from "../Elements/content"
 import Divider from "../Elements/Divider"
-import Inner from "../Elements/Inner"
+import Inner from "../Elements/inner"
 import Svg from "../Elements/Svg"
 import * as styles from "./Contact.module.css"
 const links = [

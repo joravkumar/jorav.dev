@@ -1,6 +1,6 @@
 import * as React from "react"
 import Divider from "../../components/Elements/Divider"
-import Inner from "../Elements/Inner"
+import Inner from "../Elements/inner"
 import { UpDown, UpDownWide } from "../../components/Elements/Animation"
 import Svg from "../../components/Elements/Svg"
 import * as styles from "./Intro.module.css"
