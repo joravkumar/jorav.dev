@@ -15,9 +15,9 @@ const About = ({ offset, factor = 1 }) => (
       offset={offset}
       factor={factor}
     />
-    <Content speed={0.4} offset={offset + 0.2} factor={factor}>
+    <Content speed={0.4} offset={offset} factor={factor}>
       <Inner>
-        <h2>About</h2>
+        <h2 className={styles.h2}>About</h2>
         <p className={styles.head}>
           The English language can not fully capture the depth and complexity of
           my thoughts. So I'm incorporating Emoji into my speech to better

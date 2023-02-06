@@ -7,16 +7,15 @@
   justify-content: center;
   text-align: left;
 }
-
-.main h2 {
+.h2 {
   font-size: 3rem;
 }
 
-.main a {
+.a {
   color: #f6ad55;
   font-size: 1.25rem;
   text-decoration: none;
 }
-.main a:hover {
+.a:hover {
   text-decoration: underline;
 }

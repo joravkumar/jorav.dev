@@ -148,8 +148,12 @@ const Main = ({ offset, factor = 1 }) => (
       factor={factor}
     >
       <Inner>
-        <h1>Hi, I am Jorav, a software engineer based on Jalandhar.</h1>
-        <p>I tell computers to do things sometimes they listen</p>
+        <h1 className={styles.h1}>
+          Hi, I am Jorav, a software engineer based on Jalandhar.
+        </h1>
+        <p className={styles.p}>
+          I tell computers to do things sometimes they listen
+        </p>
       </Inner>
     </Content>
   </div>

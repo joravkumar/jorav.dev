@@ -1,14 +1,4 @@
-.main {
-  padding: 4rem;
-  height: 600px;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-}
-
-.main h2 {
+.h2 {
   font-size: 3rem;
 }
 .head {

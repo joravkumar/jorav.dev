@@ -1,5 +1,6 @@
-import * as React from "react"
-
+/** @jsx jsx */
+// import * as React from "react"
+import { jsx } from "theme-ui"
 import { ParallaxLayer } from "@react-spring/parallax"
 const Divider = ({
   speed,

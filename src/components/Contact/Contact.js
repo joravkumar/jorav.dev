@@ -5,6 +5,7 @@ import Divider from "../Elements/Divider"
 import Inner from "../Elements/inner"
 import Svg from "../Elements/Svg"
 import * as styles from "./Contact.module.css"
+
 const links = [
   {
     title: "LinkedIn",
@@ -60,11 +61,13 @@ const Contact = ({ offset, factor = 1 }) => (
     <Content speed={0.4} offset={offset} factor={factor}>
       <Inner>
         {/* <ContactMDX /> */}
-        <h2>Get in touch</h2>
+        <h2 className={styles.h2}>Get in touch</h2>
         {links.map(link => {
           return (
             <p key={link.url}>
-              <a href={link.url}>{link.title}</a>
+              <a className={styles.a} href={link.url}>
+                {link.title}
+              </a>
             </p>
           )
         })}
