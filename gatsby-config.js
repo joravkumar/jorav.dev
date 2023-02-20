@@ -9,10 +9,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Jorav`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `JavaScript Developer Portfolio - Jorav - Hire Me Today`,
+    description:
+      "Looking for a JavaScript developer who loves to make bad puns and write even worse code? Look no further! I'm Jorav, a seasoned JavaScript developer with 4 years of experience. Check out my portfolio and let's make some magic happen!",
     author: `@jorav`,
-    // siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
     `gatsby-plugin-image`,

@@ -94,7 +94,7 @@ const Main = ({ offset, factor = 1 }) => (
         left="5%"
         top="70%"
       />
-      <Svg icon="circle" width={6} color="icon_darkest" left="4%" top="20%" />
+      <Svg icon="circle" width={6} color="icon_darkest" left="14%" top="20%" />
       <Svg icon="circle" width={12} color="icon_darkest" left="50%" top="60%" />
       <Svg icon="upDown" width={8} color="icon_darkest" left="95%" top="90%" />
       <Svg
@@ -149,11 +149,25 @@ const Main = ({ offset, factor = 1 }) => (
     >
       <Inner>
         <h1 className={styles.h1}>
-          Hi, I am Jorav, a software engineer based on Jalandhar.
+          Hey there, I'm Jorav, a JavaScript developer who's always down to
+          code!
         </h1>
-        <p className={styles.p}>
-          I tell computers to do things sometimes they listen
-        </p>
+        <ul>
+          <li>
+            My favorite things to build are the ones that make people smile and
+            go "whoa, that's so cool!"
+          </li>
+          <li>
+            I've been working with JavaScript for 4 years, and I'm still trying
+            to figure out if it's a blessing or a curse.
+          </li>
+          <li>
+            If you're looking for someone who loves to make bad puns and write
+            even worse code, you've come to the right place.
+          </li>
+        </ul>
+        <p className={styles.p}></p>
+        <p className={styles.p}></p>
       </Inner>
     </Content>
   </div>

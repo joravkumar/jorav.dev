@@ -17,3 +17,18 @@ body {
   background-color: #141821;
   color: #e2e8f0;
 }
+
+li {
+  font-size: 1.6rem;
+  padding: 10px 0;
+}
+@media screen and (max-width: 500px) {
+  li {
+    font-size: 1rem;
+  }
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}

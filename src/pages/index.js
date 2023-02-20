@@ -11,15 +11,17 @@ import About from "../components/About/About"
 import Contact from "../components/Contact/Contact"
 
 import { Parallax } from "@react-spring/parallax"
+import Skills from "../components/Skills/Skills"
 // import "../styles/index"
 
 const IndexPage = () => (
   <>
-    <Parallax pages={3}>
+    <Parallax pages={4}>
       {/* <Cursor /> */}
       <Intro offset={0} factor={1} />
-      <About offset={1} factor={1} />
-      <Contact offset={2} factor={1} />
+      <Skills offset={1} factor={1} />
+      <About offset={2} factor={1} />
+      <Contact offset={3} factor={1} />
     </Parallax>
   </>
 )

@@ -4,33 +4,39 @@ import Content from "../Elements/content"
 import Divider from "../Elements/Divider"
 import Inner from "../Elements/inner"
 import Svg from "../Elements/Svg"
-import * as styles from "./About.module.css"
+import * as styles from "./Skills.module.css"
 
-const About = ({ offset, factor = 1 }) => (
+const Skills = ({ offset, factor = 1 }) => (
   <div>
     <Divider
       bg="divider"
-      clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)"
+      clipPath="polygon(0 0%, 100% 4%, 100% 100%, 0 96%)"
       speed={0.2}
       offset={offset}
       factor={factor}
     />
     <Content speed={0.4} offset={offset} factor={factor}>
       <Inner>
-        <h2 className={styles.h2}>About Me</h2>
+        <h2 className={styles.h2}>Skills</h2>
         <ul>
           <li>
-            I'm a computer science grad who started tinkering with code in high
-            school and never stopped.
-          </li>
-
-          <li>
-            I got into coding because I heard it was the future, but now I'm
-            pretty sure it's the present, so I'm just trying to keep up.
+            Whether I'm working on the back end with Node.js or building a
+            responsive front end with vanilla JS or React, I'm always striving
+            to create the best possible experience for users
           </li>
           <li>
-            When I'm not coding, you can usually find me on a trip, eating
-            something, or pondering the ultimate question: tabs or spaces?
+            As a JavaScript developer, I specialize in building web applications
+            that are both efficient and engaging for users, with just the right
+            amount of humor.
+          </li>
+          <li>
+            I know my way around the front end, the back end, and all the weird
+            stuff in between.
+          </li>
+          <li>
+            Whether I'm working with vanilla JS, React JS, or some fancy new
+            framework, I always strive to make code that's easy to read, easy to
+            maintain, and maybe even a little bit fun.
           </li>
         </ul>
       </Inner>
@@ -52,7 +58,7 @@ const About = ({ offset, factor = 1 }) => (
           hiddenMobile
           width={24}
           color="icon_brightest"
-          left="17%"
+          left="7%"
           top="60%"
         />
       </UpDown>
@@ -136,4 +142,4 @@ const About = ({ offset, factor = 1 }) => (
   </div>
 )
 
-export default About
+export default Skills

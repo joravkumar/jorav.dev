@@ -6,21 +6,20 @@ import Inner from "../Elements/inner"
 import Svg from "../Elements/Svg"
 import * as styles from "./Contact.module.css"
 
-const links = [
-  {
-    title: "LinkedIn",
-    url: "https://www.linkedin.com/in/joravkumar/",
-  },
-  {
-    title: "Github",
-    url: "https://github.com/joravkumar",
-  },
-  {
-    title: "Say Hello",
-    url: "mailto:joravkumar@gmail.com",
-  },
-]
-
+// const links = [
+//   {
+//     title: "LinkedIn",
+//     url: "https://www.linkedin.com/in/joravkumar/",
+//   },
+//   {
+//     title: "Github",
+//     url: "https://github.com/joravkumar",
+//   },
+//   {
+//     title: "Say Hello",
+//     url: "mailto:joravkumar@gmail.com",
+//   },
+// ]
 const Contact = ({ offset, factor = 1 }) => (
   <div>
     <Divider fill="divider" speed={0.2} offset={offset} factor={factor}>
@@ -61,16 +60,26 @@ const Contact = ({ offset, factor = 1 }) => (
     <Content speed={0.4} offset={offset} factor={factor}>
       <Inner>
         {/* <ContactMDX /> */}
-        <h2 className={styles.h2}>Get in touch</h2>
-        {links.map(link => {
-          return (
-            <p key={link.url}>
-              <a className={styles.a} href={link.url}>
-                {link.title}
-              </a>
-            </p>
-          )
-        })}
+        <h2 className={styles.h2}>
+          Want to chat about a project, share a funny meme, or just say hi?
+        </h2>
+
+        <ul>
+          <li>
+            Want to chat about a project, tell me your favorite programming
+            joke, or just say hi? Shoot me an{" "}
+            <a href="mailto:joravkumar@gmail.com">email</a>, a carrier pigeon,
+            or a smoke signal.
+          </li>
+          <li>
+            I'm always on the lookout for new opportunities to learn and grow as
+            a developer, so if you've got a weird idea, I'm all ears.
+          </li>
+          <li>
+            Thanks for stopping by, and remember: there's no problem that can't
+            be solved with a little bit of code and a whole lot of coffee.
+          </li>
+        </ul>
       </Inner>
       {/* <Footer /> */}
     </Content>
@@ -118,7 +127,13 @@ const Contact = ({ offset, factor = 1 }) => (
           top="10%"
         />
       </UpDownWide>
-      <Svg icon="circle" width={6} color="icon_brightest" left="4%" top="20%" />
+      <Svg
+        icon="circle"
+        width={6}
+        color="icon_brightest"
+        left="14%"
+        top="20%"
+      />
       <Svg icon="circle" width={12} color="icon_darkest" left="70%" top="60%" />
       <Svg icon="box" width={12} color="icon_darkest" left="20%" top="30%" />
       <Svg
