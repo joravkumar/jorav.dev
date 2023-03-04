@@ -5,6 +5,7 @@
   font-style: normal;
   font-named-instance: "Regular";
   src: url(/fonts/RaisonnePro-Bold.woff) format("woff");
+  color: #fff;
 }
 * {
   font-family: "RaisonnePro-Bold", sans-serif;

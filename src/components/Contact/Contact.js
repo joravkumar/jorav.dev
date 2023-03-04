@@ -66,10 +66,8 @@ const Contact = ({ offset, factor = 1 }) => (
 
         <ul>
           <li>
-            Want to chat about a project, tell me your favorite programming
-            joke, or just say hi? Shoot me an{" "}
-            <a href="mailto:joravkumar@gmail.com">email</a>, a carrier pigeon,
-            or a smoke signal.
+            Shoot me an <a href="mailto:joravkumar@gmail.com">email</a>, a
+            carrier pigeon, or a smoke signal.
           </li>
           <li>
             I'm always on the lookout for new opportunities to learn and grow as

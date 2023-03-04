@@ -58,8 +58,8 @@ const Skills = ({ offset, factor = 1 }) => (
           hiddenMobile
           width={24}
           color="icon_brightest"
-          left="7%"
-          top="60%"
+          left="72%"
+          top="80%"
         />
       </UpDown>
       <UpDownWide>

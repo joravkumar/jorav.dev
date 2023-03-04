@@ -9,6 +9,13 @@ import Content from "../Elements/content"
 
 const Main = ({ offset, factor = 1 }) => (
   <div>
+    <Divider
+      bg="divider"
+      clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)"
+      speed={0.2}
+      offset={offset}
+      factor={factor}
+    />
     <Divider speed={0.2} offset={offset} factor={factor}>
       <UpDown>
         <Svg
@@ -17,8 +24,8 @@ const Main = ({ offset, factor = 1 }) => (
           width={56}
           stroke
           color="icon_orange"
-          left="10%"
-          top="20%"
+          left="25%"
+          top="70%"
         />
         <Svg
           icon="hexa"

@@ -52,7 +52,7 @@ const About = ({ offset, factor = 1 }) => (
           hiddenMobile
           width={24}
           color="icon_brightest"
-          left="17%"
+          left="93%"
           top="60%"
         />
       </UpDown>
