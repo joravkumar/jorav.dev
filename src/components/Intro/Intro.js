@@ -165,7 +165,7 @@ const Main = ({ offset, factor = 1 }) => (
             go "whoa, that's so cool!"
           </li>
           <li>
-            I've been working with JavaScript for 4 years, and I'm still trying
+            I've been working with JavaScript for 5 years, and I'm still trying
             to figure out if it's a blessing or a curse.
           </li>
           <li>
