@@ -17,6 +17,8 @@ function Seo({ description, title, children }) {
             title
             description
             author
+            siteUrl
+            keywords
           }
         }
       }
@@ -25,6 +27,7 @@ function Seo({ description, title, children }) {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+  const canonical = site.siteMetadata.siteUrl
 
   return (
     <>
@@ -37,6 +40,10 @@ function Seo({ description, title, children }) {
       <meta name="twitter:creator" content={site.siteMetadata?.author || ``} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
+      {site.siteMetadata.keywords && (
+        <meta name="keywords" content={site.siteMetadata.keywords.join(', ')} />
+      )}
+      <link rel="canonical" href={canonical} />
       {children}
     </>
   )
