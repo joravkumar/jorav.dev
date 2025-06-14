@@ -11,9 +11,10 @@ module.exports = {
   siteMetadata: {
     title: `JavaScript Developer Portfolio - Jorav - Hire Me Today`,
     description:
-      "Looking for a JavaScript developer who loves to make bad puns and write even worse code? Look no further! I'm Jorav, a seasoned JavaScript developer with 4 years of experience. Check out my portfolio and let's make some magic happen!",
+      "Looking for a JavaScript developer who loves to make bad puns and write even worse code? Look no further! I'm Jorav, a seasoned JavaScript developer with 5 years of experience. Check out my portfolio and let's make some magic happen!",
     author: `@jorav`,
     siteUrl: `https://jorav.dev`,
+    keywords: [`JavaScript`, `Gatsby`, `portfolio`, `developer`, `Jorav`],
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -29,8 +30,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `jorav.dev`,
+        short_name: `jorav`,
         start_url: `/`,
         background_color: `#663399`,
         // This will impact how browsers show your PWA/website
@@ -44,9 +45,11 @@ module.exports = {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
         host: `https://jorav.dev`,
-        policy: [{ userAgent: '*', allow: '/' }],
+        policy: [{ userAgent: "*", allow: "/" }],
       },
     },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     "gatsby-plugin-theme-ui",
   ].filter(Boolean),
 }
