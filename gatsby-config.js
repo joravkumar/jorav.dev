@@ -13,6 +13,7 @@ module.exports = {
     description:
       "Looking for a JavaScript developer who loves to make bad puns and write even worse code? Look no further! I'm Jorav, a seasoned JavaScript developer with 4 years of experience. Check out my portfolio and let's make some magic happen!",
     author: `@jorav`,
+    siteUrl: `https://jorav.dev`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -37,6 +38,13 @@ module.exports = {
         // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: `https://jorav.dev`,
+        policy: [{ userAgent: '*', allow: '/' }],
       },
     },
     "gatsby-plugin-theme-ui",
