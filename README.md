@@ -7,14 +7,14 @@ This repository contains my personal portfolio built with Gatsby. I'm Jorav, a J
 Install dependencies and start the development server:
 
 ```bash
-yarn install
-yarn start
+bun install
+bun start
 ```
 
 ## Building for Production
 
 ```bash
-yarn build
+bun build
 ```
 
 ## License
