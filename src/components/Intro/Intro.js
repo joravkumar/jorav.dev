@@ -156,8 +156,7 @@ const Main = ({ offset, factor = 1 }) => (
     >
       <Inner>
         <h1 className={styles.h1}>
-          Hey there, I'm Jorav, a JavaScript developer who's always down to
-          code!
+          Hey there, I'm Jorav, a developer who's always down to code!
         </h1>
         <ul>
           <li>
@@ -165,7 +164,7 @@ const Main = ({ offset, factor = 1 }) => (
             go "whoa, that's so cool!"
           </li>
           <li>
-            I've been working with JavaScript for 5 years, and I'm still trying
+            I've been working with JavaScript for 7+ years, and I'm still trying
             to figure out if it's a blessing or a curse.
           </li>
           <li>

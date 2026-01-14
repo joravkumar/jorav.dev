@@ -9,12 +9,19 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `JavaScript Developer Portfolio - Jorav - Hire Me Today`,
+    title: `Developer Portfolio - Jorav - Hire Me Today`,
     description:
-      "Looking for a JavaScript developer who loves to make bad puns and write even worse code? Look no further! I'm Jorav, a seasoned JavaScript developer with 5 years of experience. Check out my portfolio and let's make some magic happen!",
+      "Looking for a developer who loves to make bad puns and write even worse code? Look no further! I'm Jorav, a seasoned JavaScript developer with 7+ years of experience. Check out my portfolio and let's make some magic happen!",
     author: `@jorav`,
     siteUrl: `https://jorav.dev`,
-    keywords: [`JavaScript`, `Gatsby`, `portfolio`, `developer`, `Jorav`],
+    keywords: [
+      `JavaScript`,
+      `Gatsby`,
+      `portfolio`,
+      `developer`,
+      `Jorav`,
+      `typescript`,
+    ],
   },
   plugins: [
     `gatsby-plugin-image`,
