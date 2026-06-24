@@ -1,22 +1,27 @@
-# Jorav's Portfolio
+# jorav.dev
 
-This repository contains my personal portfolio built with Gatsby. I'm Jorav, a JavaScript developer with **5 years** of experience. The site highlights my projects, showcases some experiments, and includes ways to get in touch.
+My personal portfolio — a clean, minimal single-page site built with **Vite + React + TypeScript**. Software engineer with 7+ years shipping enterprise SaaS, full-stack and applied AI.
 
-## Running Locally
-
-Install dependencies and start the development server:
+## Develop
 
 ```bash
-bun install
-bun start
+npm install
+npm run dev      # http://localhost:5173
 ```
 
-## Building for Production
+## Build
 
 ```bash
-bun build
+npm run build    # type-checks, then outputs to dist/
+npm run preview  # serve the production build locally
 ```
+
+## Editing content
+
+All copy lives in one place: [`src/data/portfolio.ts`](src/data/portfolio.ts) — profile, skills, experience, and projects. Items tagged with `placeholder: true` (and `TODO(jorav)` comments) are waiting on real content.
+
+The accent color and all theme tokens are CSS variables in [`src/styles/global.css`](src/styles/global.css); light/dark are defined under `[data-theme="..."]`.
 
 ## License
 
-This project is released under the 0BSD license.
+Released under the 0BSD license.
