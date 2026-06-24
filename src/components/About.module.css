@@ -1,0 +1,118 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(2.5rem, 6vw, 4rem);
+}
+
+@media (min-width: 760px) {
+  .layout {
+    grid-template-columns: 1.3fr 1fr;
+  }
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+.prose {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  max-width: 56ch;
+  font-size: var(--step-1);
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.facts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin: 0;
+  padding-top: clamp(1.5rem, 3vw, 2rem);
+  border-top: var(--hairline) solid var(--border);
+}
+.fact {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.35rem;
+}
+@media (min-width: 480px) {
+  .fact {
+    grid-template-columns: 130px 1fr;
+    gap: 1rem;
+  }
+}
+.fact dt {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--faint);
+  padding-top: 0.15rem;
+}
+.fact dd {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  color: var(--heading);
+  font-size: 0.95rem;
+}
+.edu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.fact dd span {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.6rem;
+  padding-bottom: 1.5rem;
+  border-bottom: var(--hairline) solid var(--border);
+}
+.group:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.groupLabel {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.5rem;
+}
+.items li {
+  font-size: 0.9rem;
+  color: var(--text);
+  padding: 0.3rem 0.7rem;
+  border: var(--hairline) solid var(--border-strong);
+  border-radius: 100px;
+  transition: border-color 0.2s var(--ease), color 0.2s var(--ease);
+}
+.items li:hover {
+  border-color: var(--accent);
+  color: var(--heading);
+}

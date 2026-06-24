@@ -1,0 +1,43 @@
+.footer {
+  border-top: var(--hairline) solid var(--border);
+  padding-block: clamp(2rem, 5vw, 3rem);
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+}
+
+.wordmark {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--heading);
+}
+.dot {
+  color: var(--accent);
+}
+
+.note {
+  font-size: 0.85rem;
+  color: var(--faint);
+}
+
+.links {
+  display: flex;
+  gap: 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.links a {
+  color: var(--muted);
+  transition: color 0.2s var(--ease);
+}
+.links a:hover {
+  color: var(--heading);
+}

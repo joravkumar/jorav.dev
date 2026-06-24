@@ -1,0 +1,44 @@
+.intro {
+  max-width: 48ch;
+  font-size: var(--step-1);
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.email {
+  display: inline-block;
+  margin-top: clamp(1.5rem, 4vw, 2.25rem);
+  font-size: var(--step-2);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--heading);
+  background-image: linear-gradient(var(--accent), var(--accent));
+  background-size: 0% 2px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s var(--ease), color 0.2s var(--ease);
+}
+.email:hover {
+  color: var(--accent);
+  background-size: 100% 2px;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.links a {
+  color: var(--muted);
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0.25rem;
+  transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+.links a:hover {
+  color: var(--heading);
+  border-color: var(--accent);
+}

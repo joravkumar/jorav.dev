@@ -1,35 +1,204 @@
+/* ============================================================
+   Fonts — RaisonnePro (display/UI/body) + JetBrains Mono (labels)
+   ============================================================ */
 @font-face {
-  font-family: "RaisonnePro-Bold";
-  font-weight: 100 900;
+  font-family: "Raisonne";
+  font-weight: 400;
   font-display: swap;
   font-style: normal;
-  font-named-instance: "Regular";
+  src: url(/fonts/RaisonnePro-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Raisonne";
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+  src: url(/fonts/RaisonnePro-DemiBold.woff) format("woff");
+}
+@font-face {
+  font-family: "Raisonne";
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
   src: url(/fonts/RaisonnePro-Bold.woff) format("woff");
-  color: rgb(255, 255, 255);
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  src: url(/fonts/jetbrains-mono-400.woff2) format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+  src: url(/fonts/jetbrains-mono-500.woff2) format("woff2");
+}
+
+/* ============================================================
+   Design tokens
+   ============================================================ */
+:root {
+  --font-sans: "Raisonne", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* Type scale */
+  --step--1: clamp(0.83rem, 0.8rem + 0.15vw, 0.9rem);
+  --step-0: clamp(1rem, 0.96rem + 0.2vw, 1.1rem);
+  --step-1: clamp(1.2rem, 1.1rem + 0.5vw, 1.4rem);
+  --step-2: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+  --step-3: clamp(2rem, 1.6rem + 2vw, 3rem);
+  --step-4: clamp(2.6rem, 1.9rem + 3.4vw, 4.6rem);
+
+  /* Spacing / layout */
+  --maxw: 1080px;
+  --gutter: clamp(1.25rem, 5vw, 4rem);
+  --section-y: clamp(4.5rem, 9vw, 8rem);
+
+  --radius: 4px;
+  --hairline: 1px;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Light (default) — chosen warm off-white neutral, not pure white */
+:root,
+:root[data-theme="light"] {
+  --bg: #fbfbfa;
+  --bg-elev: #ffffff;
+  --text: #2a2a28;
+  --heading: #0a0a0a;
+  --muted: #6a6a66;
+  --faint: #9a9a95;
+  --border: #e6e5e0;
+  --border-strong: #d6d5cf;
+  --accent: #2b59ff;
+  --accent-contrast: #ffffff;
+  --selection: rgba(43, 89, 255, 0.16);
+}
+
+/* Dark — near-black ground */
+:root[data-theme="dark"] {
+  --bg: #0c0c0d;
+  --bg-elev: #151517;
+  --text: #c9c8c4;
+  --heading: #f5f4f1;
+  --muted: #8d8c87;
+  --faint: #5e5d59;
+  --border: #232325;
+  --border-strong: #323234;
+  --accent: #6e8bff;
+  --accent-contrast: #0c0c0d;
+  --selection: rgba(110, 139, 255, 0.22);
+}
+
+/* ============================================================
+   Reset / base
+   ============================================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 * {
-  font-family: "RaisonnePro-Bold", sans-serif;
-}
-html,
-body {
-  /* cursor: none; */
-  padding: 0;
   margin: 0;
-  background-color: rgb(20, 24, 33);
-  color: rgb(226, 232, 240);
 }
-
-li {
-  font-size: 1.6rem;
-  padding: 10px 0;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  -webkit-text-size-adjust: 100%;
 }
-@media screen and (max-width: 500px) {
-  li {
-    font-size: 1rem;
-  }
+body {
+  font-family: var(--font-sans);
+  font-size: var(--step-0);
+  line-height: 1.6;
+  color: var(--text);
+  background-color: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  transition: background-color 0.4s var(--ease), color 0.4s var(--ease);
 }
-
+::selection {
+  background: var(--selection);
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--heading);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
 ul {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
+}
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ============================================================
+   Shared layout helpers
+   ============================================================ */
+.container {
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Subtle scroll-reveal (driven by useReveal). Disabled for reduced motion. */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
 }

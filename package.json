@@ -1,55 +1,34 @@
 {
   "name": "jorav-portfolio",
   "private": true,
-  "description": "Jorav's personal portfolio built with Gatsby",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Jorav's personal portfolio",
   "author": "Jorav",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "format": "prettier --write \"**/*.{ts,tsx,css,json,md,html}\""
+  },
   "dependencies": {
-    "@emotion/react": "^11.10.5",
-    "@mdx-js/react": "v1",
-    "@react-spring/parallax": "^9.6.1",
-    "@theme-ui/mdx": "^0.15.4",
-    "@theme-ui/preset-tailwind": "^0.15.4",
-    "gatsby": "^5.4.0",
-    "gatsby-plugin-image": "^3.4.0",
-    "gatsby-plugin-manifest": "^5.4.0",
-    "gatsby-plugin-react-helmet": "^6.14.0",
-    "gatsby-plugin-robots-txt": "^1.8.0",
-    "gatsby-plugin-sharp": "^5.4.0",
-    "gatsby-plugin-sitemap": "^6.14.0",
-    "gatsby-plugin-theme-ui": "^0.15.4",
-    "gatsby-source-filesystem": "^5.4.0",
-    "gatsby-transformer-sharp": "^5.4.0",
-    "gsap": "^3.11.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    "theme-ui": "^0.15.4"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "prettier": "^2.8.1"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "0BSD",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
-    "start": "gatsby develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jorav/jorav.dev"
-  },
-  "bugs": {
-    "url": "https://github.com/jorav/jorav.dev/issues"
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
   },
   "engines": {
     "node": "24.x"
+  },
+  "license": "0BSD",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jorav/jorav.dev"
   }
 }

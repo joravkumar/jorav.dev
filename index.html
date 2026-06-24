@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <title>Jorav — Senior Software Engineer</title>
+    <meta
+      name="description"
+      content="Jorav is a senior software engineer with 7+ years building full-stack, distributed SaaS platforms and production AI search — RAG pipelines, LLM features, and the backends behind them."
+    />
+    <meta name="author" content="Jorav" />
+    <link rel="canonical" href="https://jorav.dev" />
+    <meta name="theme-color" content="#fbfbfa" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0c0c0d" media="(prefers-color-scheme: dark)" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jorav.dev" />
+    <meta property="og:title" content="Jorav — Senior Software Engineer" />
+    <meta
+      property="og:description"
+      content="Senior software engineer building full-stack, distributed SaaS platforms and production AI search. 7+ years shipping enterprise SaaS."
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@jorav" />
+    <meta name="twitter:title" content="Jorav — Senior Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="Senior software engineer building full-stack SaaS and production AI search systems."
+    />
+
+    <!-- Set theme before first paint to avoid flash of wrong theme -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme")
+          var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
+          var theme = stored || (prefersDark ? "dark" : "light")
+          document.documentElement.setAttribute("data-theme", theme)
+        } catch (e) {}
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
