@@ -167,13 +167,13 @@ export const personalProjects: Project[] = [
     href: "https://fineez.jorav.dev/",
   },
   {
-    name: "fankit",
+    name: "tools.jorav.dev",
     kind: "personal",
     blurb:
-      "A web product I built at fankit.in with TypeScript and Next.js.", // TODO(jorav): say what fankit actually does in one line.
-    tags: ["TypeScript", "Next.js"],
-    href: "https://fankit.in",
-    repo: "https://github.com/joravkumar/fankit",
+      "A set of fast, privacy-first browser tools like JSON to Excel and a PDF manager. Everything runs on your device, nothing is ever uploaded. I built it to stop pasting sensitive files into random websites.",
+    tags: ["React", "TypeScript", "Client-side", "Privacy-first"],
+    href: "https://tools.jorav.dev",
+    repo: "https://github.com/joravkumar/tools",
   },
 ]
 
