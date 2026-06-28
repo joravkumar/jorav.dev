@@ -1,26 +1,12 @@
 /* ============================================================
-   Fonts — RaisonnePro (display/UI/body) + JetBrains Mono (labels)
+   Fonts — Space Grotesk (display/UI/body) + JetBrains Mono (labels)
    ============================================================ */
 @font-face {
-  font-family: "Raisonne";
-  font-weight: 400;
+  font-family: "Space Grotesk";
+  font-weight: 300 700;
   font-display: swap;
   font-style: normal;
-  src: url(/fonts/RaisonnePro-Regular.woff) format("woff");
-}
-@font-face {
-  font-family: "Raisonne";
-  font-weight: 600;
-  font-display: swap;
-  font-style: normal;
-  src: url(/fonts/RaisonnePro-DemiBold.woff) format("woff");
-}
-@font-face {
-  font-family: "Raisonne";
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-  src: url(/fonts/RaisonnePro-Bold.woff) format("woff");
+  src: url(/fonts/SpaceGrotesk.woff2) format("woff2");
 }
 @font-face {
   font-family: "JetBrains Mono";
@@ -41,8 +27,8 @@
    Design tokens
    ============================================================ */
 :root {
-  --font-sans: "Raisonne", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
-    Roboto, sans-serif;
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
 
   /* Type scale */
