@@ -45,7 +45,13 @@ export const skills: SkillGroup[] = [
   },
   {
     label: "Backend & Architecture",
-    items: ["Node.js", "NestJS", "Microservices", "REST / WebSocket", "Distributed systems"],
+    items: [
+      "Node.js",
+      "NestJS",
+      "Microservices",
+      "REST / WebSocket",
+      "Distributed systems",
+    ],
   },
   {
     label: "Data & Caching",
@@ -142,7 +148,7 @@ export const workProjects: Project[] = [
     blurb:
       "A social commerce platform with shoppable video and live streams, built on Next.js and Node. I built the video streaming backend and tuned it for low latency under heavy concurrent viewership.",
     tags: ["Next.js", "Node.js", "Video streaming", "Real-time"],
-    href: "https://maxicus.com/shopping-with-live-video/",
+    href: "https://phygitalmax.com",
   },
   {
     name: "LEAP",
