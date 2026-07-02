@@ -179,7 +179,6 @@ export const personalProjects: Project[] = [
       "A set of fast, privacy-first browser tools like JSON to Excel and a PDF manager. Everything runs on your device, nothing is ever uploaded. I built it to stop pasting sensitive files into random websites.",
     tags: ["React", "TypeScript", "Client-side", "Privacy-first"],
     href: "https://tools.jorav.dev",
-    repo: "https://github.com/joravkumar/tools",
   },
 ]
 
