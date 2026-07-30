@@ -25,5 +25,5 @@ export default function Footer() {
   )
 }
 
-// Build-time constant — avoids a re-render-only Date call and is stable in SSR.
-const YEAR = 2026
+// Resolved once at module load, not per render — stays correct as years roll over.
+const YEAR = new Date().getFullYear()

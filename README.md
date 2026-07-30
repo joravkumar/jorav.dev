@@ -2,7 +2,7 @@
 
 My personal portfolio. A clean, fast, single-page site built with Vite, React, and TypeScript, and deployed on Vercel. Live at [jorav.dev](https://jorav.dev).
 
-I'm a software engineer with 7+ years shipping enterprise SaaS across full-stack and applied AI.
+I'm a software engineer with 8+ years shipping enterprise SaaS across full-stack and applied AI.
 
 ## Highlights
 
@@ -41,7 +41,7 @@ public/fonts/     # self-hosted woff2 (Space Grotesk + JetBrains Mono)
 
 ## Customizing
 
-- **Content** lives entirely in [`src/data/portfolio.ts`](src/data/portfolio.ts) (profile, skills, experience, projects). Items tagged `placeholder: true` and `TODO(jorav)` comments are waiting on real content.
+- **Content** lives entirely in [`src/data/portfolio.ts`](src/data/portfolio.ts) (profile, skills, experience, projects). `TODO(jorav)` comments mark spots waiting on real content. The résumé at [`public/resume.pdf`](public/resume.pdf) is built from [`main.tex`](main.tex) — keep the two in sync, and rebuild with `xelatex main.tex` (XeLaTeX or LuaLaTeX is required; `fontspec` will fail under `pdflatex`).
 - **Theme** tokens (accent color, surfaces, borders) are CSS variables in [`src/styles/global.css`](src/styles/global.css); light and dark are defined under `[data-theme="..."]`.
 - **Fonts** (Space Grotesk for text, JetBrains Mono for labels) are self-hosted in [`public/fonts`](public/fonts), so there is no Google Fonts CDN. The same fonts are shared with [tools.jorav.dev](https://tools.jorav.dev) so the two sites read as one brand.
 

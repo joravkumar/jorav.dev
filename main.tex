@@ -1,0 +1,190 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Adventor}
+\defaultfontfeatures{Ligatures={TeX,NoCommon}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.1in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\definecolor{accent}{RGB}{30, 80, 160}
+
+% Spacing is driven by titlesec/enumitem lengths rather than negative \vspace
+% hacks, so the whole document can be loosened or tightened from here.
+\setlength{\footskip}{4pt}
+\linespread{1.04}
+
+\titleformat{\section}{
+  \scshape\raggedright\large\color{accent}
+}{}{0em}{}[{\color{accent}\titlerule[0.8pt]}]
+% {left}{above}{below}
+\titlespacing*{\section}{0pt}{12pt}{5pt}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\[1pt]
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textit{\small #2} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeProductHeading}[2]{
+  \item[]\hspace{0.18in}
+    \begin{tabular*}{0.79\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textit{\small #2} \\
+    \end{tabular*}
+}
+
+% Education fits on one line per degree: school + degree left, dates + place right.
+\newcommand{\resumeEducation}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} \textbar\ \textit{\small #2} & \small #3 \textbar\ \textit{\small #4} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small #1 & \small #2 \\
+    \end{tabular*}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=6pt, topsep=4pt, parsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in, itemsep=3.5pt, topsep=4pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+% ---------- HEADING ----------
+\begin{center}
+    {\huge \scshape Jorav} \\[4pt]
+    \small
+    +91-80543-42384 \quad$\cdot$\quad
+    \href{mailto:me@jorav.dev}{\color{accent}\underline{me@jorav.dev}} \quad$\cdot$\quad
+    \href{https://linkedin.com/in/joravkumar}{\color{accent}\underline{linkedin.com/in/joravkumar}} \quad$\cdot$\quad
+    \href{https://github.com/joravkumar}{\color{accent}\underline{github.com/joravkumar}} \quad$\cdot$\quad
+    \href{https://jorav.dev}{\color{accent}\underline{jorav.dev}}
+\end{center}
+
+% ---------- SUMMARY ----------
+\section{Summary}
+\small{
+Senior Software Engineer, \textbf{8+ years} building full-stack, distributed SaaS platforms and production AI search.
+Own the architecture, performance, and scalability of a core revenue product on AWS serving \textbf{100+ enterprise customers} across \textbf{10k+ licensed seats}. Manage \textbf{7+ engineers}.
+}
+
+
+% ---------- KEY ACHIEVEMENTS ----------
+\section{Key Achievements}
+\begin{itemize}[leftmargin=0.2in, itemsep=3.5pt, topsep=4pt, parsep=0pt]
+  \small
+  \item Cut P95 API latency \textbf{from 600ms to 320ms} and raised throughput \textbf{40\%+} (around 5k requests/min at peak).
+  \item Led the platform's shift from keyword search to a production \textbf{RAG + LLM} suite, improving retrieval accuracy \textbf{15\%}.
+  \item Delivered the flagship product to marquee accounts across Gulf retail, Indian fintech, MENA banking, healthcare.
+  \item Reduced infrastructure cost \textbf{30\%} through VP9 transcoding and CI/CD optimization.
+\end{itemize}
+
+% ---------- EXPERIENCE ----------
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Kochar Infotech Ltd.}{Aug 2019 -- Present}
+    {Senior Software Engineer (SDE-3) -- promoted from SDE-1 via SDE-2}{Gurgaon, India}
+  \resumeProductHeading{Knowmax (Knowledge Management Platform)}{\href{https://knowmax.ai}{\color{accent}\underline{knowmax.ai}} \textbar\ 2023 -- Present}
+  \resumeItemListStart
+    \resumeItem{Own full-stack architecture of this multi-tenant, microservices knowledge platform (React, NestJS, Redis, PostgreSQL).}
+    \resumeItem{Built the production RAG search (Typesense, LangChain, Azure OpenAI) with Arabic and multilingual semantic search.}
+    \resumeItem{Developed LLM authoring (article, FAQ, decision-tree, quiz) and an AI agent training simulator on Gemini and GPT.}
+    \resumeItem{Engineered an MCP server exposing knowledge APIs to AI agents, with PII masking for banking compliance.}
+    \resumeItem{Built enterprise integrations (Genesys, Zendesk, MS Dynamics, Cisco) for contact-center and CRM workflows.}
+    \resumeItem{Led a zero-downtime monolith-to-microservices migration across live tenants, with per-tenant data isolation and RBAC.}
+    \resumeItem{Manage \textbf{7+} engineers and interns: design and code reviews, planning, delivery, and feature scoping with product.}
+  \resumeItemListEnd
+
+  \resumeProductHeading{Phygital (Social vCommerce Platform)}{\href{https://phygitalmax.com/}{\color{accent}\underline{phygitalmax.com}} \textbar\ 2021 -- 2023}
+  \resumeItemListStart
+    \resumeItem{Developed full-stack features for this commercial social vCommerce product (Next.js, Node.js): shoppable video, live streams, and creator-led discovery tied to real-time purchase flows.}
+    \resumeItem{Engineered a video streaming backend with real-time analytics, tuned for low latency under high concurrency.}
+  \resumeItemListEnd
+
+  \resumeProductHeading{LEAP (Cross-Platform Desktop App)}{\href{https://leapmax.ai/}{\color{accent}\underline{leapmax.ai}} \textbar\ Aug 2019 -- 2021}
+  \resumeItemListStart
+    \resumeItem{Built the React frontend and designed a multi-tier AWS backend (EC2, S3) for a cross-platform desktop product delivered to an enterprise client, with full CI/CD, observability, and a \textbf{99.9\% uptime SLA}.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Nugen I.T. Services}{Apr 2018 -- Aug 2019}
+    {MERN Stack Developer}{Jalandhar, India}
+  \resumeItemListStart
+    \resumeItem{Built full-stack web applications on the MERN stack, mostly React front-ends and Node.js services.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% ---------- TECHNICAL SKILLS ----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=4pt, topsep=4pt, parsep=0pt]
+  \small{
+    \item \textbf{Languages:} \hspace{2pt} TypeScript, JavaScript, SQL \quad$\cdot$\quad \textbf{Data \& Caching:} \hspace{2pt} PostgreSQL, Prisma, Redis, BullMQ
+    \item \textbf{Frontend:} \hspace{2pt} React.js, Next.js, Tailwind CSS, shadcn/ui, Framer Motion, PWA
+    \item \textbf{Backend \& Architecture:} \hspace{2pt} Node.js, NestJS, Microservices, REST/WebSocket APIs, Distributed Systems
+    \item \textbf{Cloud \& DevOps:} \hspace{2pt} AWS (EC2, S3), Docker, CI/CD, Nginx, Git, Linux, Observability \& Monitoring
+    \item \textbf{Integrations \& Auth:} \hspace{2pt} Genesys, Zendesk, MS Dynamics, Cisco, Keycloak (SSO/OAuth), Webhooks
+    \item \textbf{AI \& Search:} \hspace{2pt} RAG Pipelines, LangChain, Azure OpenAI, Gemini, Google Vertex AI, MCP, Multilingual Semantic Search
+  }
+\end{itemize}
+
+% ---------- EDUCATION & RECOGNITION ----------
+\section{Education \& Recognition}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=4pt, topsep=4pt, parsep=0pt]
+  \resumeEducation
+    {Lovely Professional University}{Master of Computer Applications (MCA)}
+    {2017 -- 2019}{Jalandhar, Punjab}
+  \resumeEducation
+    {Guru Nanak Dev University}{Bachelor of Computer Applications (BCA), Grade A}
+    {2014 -- 2017}{Punjab, India}
+  \item \small \textbf{Awards:} \hspace{2pt} \textbf{1st Place} -- Hackathon 2019, DAVIET \quad$\cdot$\quad \textbf{3rd Place} -- Hackathon 2019, IIT Ropar
+\end{itemize}
+
+\end{document}

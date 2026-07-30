@@ -27,7 +27,7 @@ export const profile = {
   title: "Senior Software Engineer",
   // Full-stack & AI-forward positioning
   tagline: "I build web applications and the AI systems behind them.",
-  bio: "Senior software engineer, 7+ years in enterprise SaaS. At Kochar Infotech I lead the architecture and scaling of a product used by 100+ companies and 10,000+ people, and I build its AI search: RAG pipelines, LLM features, and the APIs that keep them fast.",
+  bio: "Senior software engineer, 8+ years in enterprise SaaS. At Kochar Infotech I lead the architecture and scaling of a product used by 100+ enterprise customers across 10,000+ licensed seats, and I build its AI search: RAG pipelines, LLM features, and the APIs that keep them fast.",
   location: "Gurgaon, India",
   email: "me@jorav.dev",
   resumeUrl: "/resume.pdf",
@@ -41,7 +41,14 @@ export const skills: SkillGroup[] = [
   { label: "Languages", items: ["TypeScript", "JavaScript", "SQL"] },
   {
     label: "Frontend",
-    items: ["React", "Next.js", "Tailwind CSS", "Framer Motion", "PWA"],
+    items: [
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Framer Motion",
+      "PWA",
+    ],
   },
   {
     label: "Backend & Architecture",
@@ -59,7 +66,24 @@ export const skills: SkillGroup[] = [
   },
   {
     label: "Cloud & DevOps",
-    items: ["AWS (EC2, S3)", "Docker", "CI/CD", "Nginx", "Observability"],
+    items: [
+      "AWS (EC2, S3)",
+      "Docker",
+      "CI/CD",
+      "Nginx",
+      "Linux",
+      "Observability",
+    ],
+  },
+  {
+    label: "Integrations & Auth",
+    items: [
+      "Genesys",
+      "Zendesk",
+      "Cisco",
+      "Keycloak (SSO/OAuth)",
+      "Webhooks",
+    ],
   },
   {
     label: "AI & Search",
@@ -84,7 +108,7 @@ export const experience: Role[] = [
     points: [
       "Cut P95 API latency from 600ms to 320ms and raised throughput 40%+ (~5k requests/min at peak).",
       "Led the platform's shift from keyword search to a production RAG + LLM suite, improving retrieval accuracy 15%.",
-      "Shipped the flagship product to marquee enterprise accounts including Majid Al Futtaim, PhonePe, and National Bank of Egypt.",
+      "Shipped the flagship product to marquee enterprise accounts: a leading Middle East retail conglomerate, a top Indian fintech serving 2M+ users, major MENA banks, and a US healthcare provider.",
       "Reduced infrastructure cost 30% through VP9 transcoding and CI/CD optimization.",
     ],
     href: "https://www.kochartech.com/",
@@ -94,7 +118,7 @@ export const experience: Role[] = [
     title: "MERN Stack Developer",
     period: "Apr 2018 – Aug 2019",
     summary:
-      "My first job out of university. Frontend developer on client web apps, working in React, JavaScript, HTML, and CSS.",
+      "My first engineering job. Full-stack work on client web apps in the MERN stack, weighted toward React front-ends.",
     points: [
       "Built and shipped React frontends for client projects.",
       "Moved into the wider MERN stack here, and picked up TypeScript and Node.",
